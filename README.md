@@ -35,7 +35,14 @@ The components set the AudioNode properties via props. See the Mozilla documenta
 The default props are set to the Web Audio API defaults, with the exception of WaveShaper, which provides the example curve shown in the Mozilla documentation.
 
 ## Analyser
-The Analyser provides exposes the ``getFloatFrequencyData``, ``getByteFrequencyData``, ``getFloatTimeDomainData``, and ``getByteTimeDomainData`` from the Web Audio API as props to its children.
+The Analyser provides exposes thinly wrapped ``getFloatFrequencyData``, ``getByteFrequencyData``, ``getFloatTimeDomainData``, and ``getByteTimeDomainData`` from the Web Audio API AnalyserNode as props to its children. These functions return the data in the proper array types as follows:
+
+* getFloatFrequencyData: Float32Array
+* getByteFrequencyData: Uint8Array
+* getFloatTimeDomainData: Float32Array
+* getByteTimeDomainData: Uint8Array
+
+``frequencyBinCount`` is also exposed from the AnalyserNode via props.
 
 ## Roadmap
 
