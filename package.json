@@ -3,6 +3,14 @@
   "version": "0.0.1",
   "description": "HTML 5 Audio API in React",
   "main": "index.js",
+  "files": [
+  	"lib",
+  	"src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrbala/react-audio.git"
+  },
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib",
     "upload": "npm run build && npm publish",
