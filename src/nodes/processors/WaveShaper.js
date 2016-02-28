@@ -24,7 +24,7 @@ const defaultCurve = (amount => {
   return curve;
 })(400)
 
-module.exports.defaultProps = {
+WaveShaper.defaultProps = {
 	curve: defaultCurve,
 	oversample: 'none'
 }
