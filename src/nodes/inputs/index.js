@@ -1,5 +1,5 @@
-import Oscillator from './Oscillator'
+import Oscillator from './Oscillator';
 
 export default {
-	Oscillator
-}
+	Oscillator,
+};

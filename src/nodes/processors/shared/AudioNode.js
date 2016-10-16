@@ -1,36 +1,36 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import update from '../../shared/update'
+import update from '../../shared/update';
 
 export default class AudioNode extends Component {
 	componentDidMount() {
-		var { node } = this
-		var { audioNodeChain } = this.context
+		var { node } = this;
+		var { audioNodeChain } = this.context;
 
-		audioNodeChain.push(node)
+		audioNodeChain.push(node);
 
-		update.call(this)
+		update.call(this);
 	}
 
 	componentDidUpdate() {
-		update.call(this)
+		update.call(this);
 	}
 
 	componentWillUnmount() {
-		var { node } = this
-		var { audioNodeChain } = this.context
+		var { node } = this;
+		var { audioNodeChain } = this.context;
 
-		audioNodeChain.remove(node)
+		audioNodeChain.remove(node);
 
-		node.disconnect()
+		node.disconnect();
 	}
 
 	render() {
-		return <div />
+		return <div />;
 	}
 }
 
 AudioNode.contextTypes = {
 	audioContext: React.PropTypes.any.isRequired,
-	audioNodeChain: React.PropTypes.any.isRequired
-}
+	audioNodeChain: React.PropTypes.any.isRequired,
+};

@@ -1,5 +1,5 @@
 export default function() {
-	var { node } = this
+	var { node } = this;
 	var { 
 		type, 
 		curve, 
@@ -8,15 +8,15 @@ export default function() {
 		minDecibels, 
 		maxDecibels, 
 		smoothingTimeConstant, 
-		...rest 
-	} = this.props
+		...rest, 
+	} = this.props;
 
 	if (!node)
-		return
+		return;
 
-	Object.assign(node, {type, curve, oversample})
+	Object.assign(node, {type, curve, oversample});
 	
 	for (var prop in rest)
 		if (node[prop])
-			node[prop].value = rest[prop]
+			node[prop].value = rest[prop];
 }
