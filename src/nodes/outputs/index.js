@@ -1,5 +1,5 @@
-import Destination from './Destination'
+import Destination from './Destination';
 
 export default {
-	Destination
-}
+	Destination,
+};

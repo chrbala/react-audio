@@ -1,12 +1,12 @@
-import AudioNode from './shared/AudioNode'
+import AudioNode from './shared/AudioNode';
 
 export default class DynamicsCompressor extends AudioNode {
 	componentWillMount() {
-		var { audioContext } = this.context
+		var { audioContext } = this.context;
 		if (audioContext.createDynamicsCompressor)
-			this.node = audioContext.createDynamicsCompressor()
+			this.node = audioContext.createDynamicsCompressor();
 		else
-			console.error('DynamicsCompressor not supported in this browser')
+			console.error('DynamicsCompressor not supported in this browser');
 	}
 }
 
@@ -16,5 +16,5 @@ module.exports.defaultProps = {
 	ratio: 12,
 	reduction: 0,
 	attack: 0.003,
-	release: 0.25
-}
+	release: 0.25,
+};

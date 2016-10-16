@@ -1,7 +1,7 @@
-import AudioContextComponent from './AudioContext'
-import nodes from './nodes'
+import AudioContextComponent from './AudioContext';
+import nodes from './nodes';
 
 module.exports = {
 	AudioContextComponent,
-	...nodes
-}
+	...nodes,
+};
