@@ -4,8 +4,8 @@
   "description": "HTML 5 Audio API in React",
   "main": "index.js",
   "files": [
-  	"lib",
-  	"src"
+    "lib",
+    "src"
   ],
   "repository": {
     "type": "git",
@@ -25,12 +25,13 @@
   "author": "Chris Bala",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "6.5.1",
-    "babel-core": "6.5.2",
-    "babel-preset-es2015": "6.5.0",
-    "babel-preset-react": "6.5.0",
-    "babel-preset-stage-0": "6.5.0",
-    "linter": "git+https://github.com/chrbala/linter.git",
+    "babel-cli": "6.16.0",
+    "babel-core": "6.16.0",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
+    "eslint": "1.10.3",
+    "linter": "git+https://github.com/chrbala/linter.git#332fcad",
     "tape": "4.4.0"
   }
 }
